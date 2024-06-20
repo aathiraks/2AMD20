@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "Dallas", "label": "Dallas", "labelHighlightBold": true, "shape": "dot", "title": "County: Dallas"}, {"color": "#97c2fc", "id": "1.0", "label": "1.0", "labelHighlightBold": true, "shape": "dot", "title": "RUCC: 1.0"}, {"color": "#97c2fc", "id": "Hood_2020", "label": "Hood_2020", "labelHighlightBold": true, "shape": "dot", "title": "Hood_2020"}, {"color": "#97c2fc", "id": "100", "label": "100", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 100"}, {"color": "#97c2fc", "id": "Somerset_2019", "label": "Somerset_2019", "labelHighlightBold": true, "shape": "dot", "title": "Somerset_2019"}, {"color": "#97c2fc", "id": "Somerset", "label": "Somerset", "labelHighlightBold": true, "shape": "dot", "title": "County: Somerset"}, {"color": "#97c2fc", "id": "Tioga_2019", "label": "Tioga_2019", "labelHighlightBold": true, "shape": "dot", "title": "Tioga_2019"}, {"color": "#97c2fc", "id": "Tioga", "label": "Tioga", "labelHighlightBold": true, "shape": "dot", "title": "County: Tioga"}, {"color": "#97c2fc", "id": "Dallas_2020", "label": "Dallas_2020", "labelHighlightBold": true, "shape": "dot", "title": "Dallas_2020"}, {"color": "#97c2fc", "id": "Maverick_2018", "label": "Maverick_2018", "labelHighlightBold": true, "shape": "dot", "title": "Maverick_2018"}, {"color": "#97c2fc", "id": "2610112", "label": "2610112", "labelHighlightBold": true, "shape": "dot", "title": "Population: 2610112"}, {"color": "#97c2fc", "id": "Texas", "label": "Texas", "labelHighlightBold": true, "shape": "dot", "title": "State: Texas"}, {"color": "#97c2fc", "id": "135", "label": "135", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 135"}, {"color": "#97c2fc", "id": "Dallas_2019", "label": "Dallas_2019", "labelHighlightBold": true, "shape": "dot", "title": "Dallas_2019"}, {"color": "#97c2fc", "id": "2635603", "label": "2635603", "labelHighlightBold": true, "shape": "dot", "title": "Population: 2635603"}, {"color": "#97c2fc", "id": "Somerset_2020", "label": "Somerset_2020", "labelHighlightBold": true, "shape": "dot", "title": "Somerset_2020"}, {"color": "#97c2fc", "id": "71", "label": "71", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 71"}, {"color": "#97c2fc", "id": "80", "label": "80", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 80"}, {"color": "#97c2fc", "id": "Dallas_2018", "label": "Dallas_2018", "labelHighlightBold": true, "shape": "dot", "title": "Dallas_2018"}, {"color": "#97c2fc", "id": "161", "label": "161", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 161"}, {"color": "#97c2fc", "id": "Sarpy_2020", "label": "Sarpy_2020", "labelHighlightBold": true, "shape": "dot", "title": "Sarpy_2020"}, {"color": "#97c2fc", "id": "484488858.3", "label": "484488858.3", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 484488858.3"}, {"color": "#97c2fc", "id": "Hood_2018", "label": "Hood_2018", "labelHighlightBold": true, "shape": "dot", "title": "Hood_2018"}, {"color": "#97c2fc", "id": "60249", "label": "60249", "labelHighlightBold": true, "shape": "dot", "title": "Population: 60249"}, {"color": "#97c2fc", "id": "149", "label": "149", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 149"}, {"color": "#97c2fc", "id": "Sarpy_2018", "label": "Sarpy_2018", "labelHighlightBold": true, "shape": "dot", "title": "Sarpy_2018"}, {"color": "#97c2fc", "id": "569887410.1", "label": "569887410.1", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 569887410.1"}, {"color": "#97c2fc", "id": "Maverick", "label": "Maverick", "labelHighlightBold": true, "shape": "dot", "title": "County: Maverick"}, {"color": "#97c2fc", "id": "Sarpy_2019", "label": "Sarpy_2019", "labelHighlightBold": true, "shape": "dot", "title": "Sarpy_2019"}, {"color": "#97c2fc", "id": "Pennsylvania", "label": "Pennsylvania", "labelHighlightBold": true, "shape": "dot", "title": "State: Pennsylvania"}, {"color": "#97c2fc", "id": "Hood", "label": "Hood", "labelHighlightBold": true, "shape": "dot", "title": "County: Hood"}, {"color": "#97c2fc", "id": "Tioga_2018", "label": "Tioga_2018", "labelHighlightBold": true, "shape": "dot", "title": "Tioga_2018"}, {"color": "#97c2fc", "id": "Maverick_2019", "label": "Maverick_2019", "labelHighlightBold": true, "shape": "dot", "title": "Maverick_2019"}, {"color": "#97c2fc", "id": "104", "label": "104", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 104"}, {"color": "#97c2fc", "id": "11523452066.0", "label": "11523452066.0", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 11523452066.0"}, {"color": "#97c2fc", "id": "Somerset_2018", "label": "Somerset_2018", "labelHighlightBold": true, "shape": "dot", "title": "Somerset_2018"}, {"color": "#97c2fc", "id": "75665930.8", "label": "75665930.8", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 75665930.8"}, {"color": "#97c2fc", "id": "Tioga_2020", "label": "Tioga_2020", "labelHighlightBold": true, "shape": "dot", "title": "Tioga_2020"}, {"color": "#97c2fc", "id": "8.0", "label": "8.0", "labelHighlightBold": true, "shape": "dot", "title": "RUCC: 8.0"}, {"color": "#97c2fc", "id": "259485519.0", "label": "259485519.0", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 259485519.0"}, {"color": "#97c2fc", "id": "90", "label": "90", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 90"}, {"color": "#97c2fc", "id": "176512942.8", "label": "176512942.8", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 176512942.8"}, {"color": "#97c2fc", "id": "62057", "label": "62057", "labelHighlightBold": true, "shape": "dot", "title": "Population: 62057"}, {"color": "#97c2fc", "id": "Maverick_2020", "label": "Maverick_2020", "labelHighlightBold": true, "shape": "dot", "title": "Maverick_2020"}, {"color": "#97c2fc", "id": "41025", "label": "41025", "labelHighlightBold": true, "shape": "dot", "title": "Population: 41025"}, {"color": "#97c2fc", "id": "57875", "label": "57875", "labelHighlightBold": true, "shape": "dot", "title": "Population: 57875"}, {"color": "#97c2fc", "id": "Hood_2019", "label": "Hood_2019", "labelHighlightBold": true, "shape": "dot", "title": "Hood_2019"}, {"color": "#97c2fc", "id": "61762", "label": "61762", "labelHighlightBold": true, "shape": "dot", "title": "Population: 61762"}, {"color": "#97c2fc", "id": "97", "label": "97", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 97"}, {"color": "#97c2fc", "id": "217110757.1", "label": "217110757.1", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 217110757.1"}, {"color": "#97c2fc", "id": "181061841.6", "label": "181061841.6", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 181061841.6"}, {"color": "#97c2fc", "id": "Sarpy", "label": "Sarpy", "labelHighlightBold": true, "shape": "dot", "title": "County: Sarpy"}, {"color": "#97c2fc", "id": "183377087.7", "label": "183377087.7", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 183377087.7"}, {"color": "#97c2fc", "id": "68625797.88", "label": "68625797.88", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 68625797.88"}, {"color": "#97c2fc", "id": "Nebraska", "label": "Nebraska", "labelHighlightBold": true, "shape": "dot", "title": "State: Nebraska"}, {"color": "#97c2fc", "id": "468740329.2", "label": "468740329.2", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 468740329.2"}, {"color": "#97c2fc", "id": "57970", "label": "57970", "labelHighlightBold": true, "shape": "dot", "title": "Population: 57970"}, {"color": "#97c2fc", "id": "2629764", "label": "2629764", "labelHighlightBold": true, "shape": "dot", "title": "Population: 2629764"}, {"color": "#97c2fc", "id": "404374594.9", "label": "404374594.9", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 404374594.9"}, {"color": "#97c2fc", "id": "255302783.2", "label": "255302783.2", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 255302783.2"}, {"color": "#97c2fc", "id": "472759734.7", "label": "472759734.7", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 472759734.7"}, {"color": "#97c2fc", "id": "73951", "label": "73951", "labelHighlightBold": true, "shape": "dot", "title": "Population: 73951"}, {"color": "#97c2fc", "id": "40665", "label": "40665", "labelHighlightBold": true, "shape": "dot", "title": "Population: 40665"}, {"color": "#97c2fc", "id": "10764144411.0", "label": "10764144411.0", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 10764144411.0"}, {"color": "#97c2fc", "id": "160", "label": "160", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 160"}, {"color": "#97c2fc", "id": "11826623292.0", "label": "11826623292.0", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 11826623292.0"}, {"color": "#97c2fc", "id": "79", "label": "79", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 79"}, {"color": "#97c2fc", "id": "566793881.8", "label": "566793881.8", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 566793881.8"}, {"color": "#97c2fc", "id": "191167", "label": "191167", "labelHighlightBold": true, "shape": "dot", "title": "Population: 191167"}, {"color": "#97c2fc", "id": "133", "label": "133", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 133"}, {"color": "#97c2fc", "id": "2.0", "label": "2.0", "labelHighlightBold": true, "shape": "dot", "title": "RUCC: 2.0"}, {"color": "#97c2fc", "id": "184106", "label": "184106", "labelHighlightBold": true, "shape": "dot", "title": "Population: 184106"}, {"color": "#97c2fc", "id": "6.0", "label": "6.0", "labelHighlightBold": true, "shape": "dot", "title": "RUCC: 6.0"}, {"color": "#97c2fc", "id": "40725", "label": "40725", "labelHighlightBold": true, "shape": "dot", "title": "Population: 40725"}, {"color": "#97c2fc", "id": "69919035.0", "label": "69919035.0", "labelHighlightBold": true, "shape": "dot", "title": "VMT: 69919035.0"}, {"color": "#97c2fc", "id": "74019", "label": "74019", "labelHighlightBold": true, "shape": "dot", "title": "Population: 74019"}, {"color": "#97c2fc", "id": "93", "label": "93", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 93"}, {"color": "#97c2fc", "id": "74", "label": "74", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 74"}, {"color": "#97c2fc", "id": "186893", "label": "186893", "labelHighlightBold": true, "shape": "dot", "title": "Population: 186893"}, {"color": "#97c2fc", "id": "3.0", "label": "3.0", "labelHighlightBold": true, "shape": "dot", "title": "RUCC: 3.0"}, {"color": "#97c2fc", "id": "143", "label": "143", "labelHighlightBold": true, "shape": "dot", "title": "MaxAQI: 143"}, {"color": "#97c2fc", "id": "4.0", "label": "4.0", "labelHighlightBold": true, "shape": "dot", "title": "RUCC: 4.0"}, {"color": "#97c2fc", "id": "58357", "label": "58357", "labelHighlightBold": true, "shape": "dot", "title": "Population: 58357"}, {"color": "#97c2fc", "id": "73442", "label": "73442", "labelHighlightBold": true, "shape": "dot", "title": "Population: 73442"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "black", "from": "Dallas", "label": "hasRUCC", "title": "hasRUCC", "to": "1.0"}, {"arrows": "to", "color": "blue", "from": "Hood_2020", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "100"}, {"arrows": "to", "color": "orange", "from": "Somerset_2019", "label": "hasCounty", "title": "hasCounty", "to": "Somerset"}, {"arrows": "to", "color": "orange", "from": "Tioga_2019", "label": "hasCounty", "title": "hasCounty", "to": "Tioga"}, {"arrows": "to", "color": "orange", "from": "Dallas_2020", "label": "hasCounty", "title": "hasCounty", "to": "Dallas"}, {"arrows": "to", "color": "blue", "from": "Maverick_2018", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "100"}, {"arrows": "to", "color": "green", "from": "Dallas_2020", "label": "hasPopulation", "title": "hasPopulation", "to": "2610112"}, {"arrows": "to", "color": "red", "from": "Dallas", "label": "hasState", "title": "hasState", "to": "Texas"}, {"arrows": "to", "color": "blue", "from": "Dallas_2020", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "135"}, {"arrows": "to", "color": "green", "from": "Dallas_2019", "label": "hasPopulation", "title": "hasPopulation", "to": "2635603"}, {"arrows": "to", "color": "blue", "from": "Somerset_2020", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "71"}, {"arrows": "to", "color": "blue", "from": "Somerset_2019", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "80"}, {"arrows": "to", "color": "blue", "from": "Dallas_2018", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "161"}, {"arrows": "to", "color": "orange", "from": "Dallas_2019", "label": "hasCounty", "title": "hasCounty", "to": "Dallas"}, {"arrows": "to", "color": "pink", "from": "Sarpy_2020", "label": "hasVMT", "title": "hasVMT", "to": "484488858.3"}, {"arrows": "to", "color": "green", "from": "Hood_2018", "label": "hasPopulation", "title": "hasPopulation", "to": "60249"}, {"arrows": "to", "color": "blue", "from": "Sarpy_2020", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "149"}, {"arrows": "to", "color": "pink", "from": "Sarpy_2018", "label": "hasVMT", "title": "hasVMT", "to": "569887410.1"}, {"arrows": "to", "color": "red", "from": "Maverick", "label": "hasState", "title": "hasState", "to": "Texas"}, {"arrows": "to", "color": "blue", "from": "Sarpy_2019", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "80"}, {"arrows": "to", "color": "red", "from": "Somerset", "label": "hasState", "title": "hasState", "to": "Pennsylvania"}, {"arrows": "to", "color": "orange", "from": "Hood_2018", "label": "hasCounty", "title": "hasCounty", "to": "Hood"}, {"arrows": "to", "color": "orange", "from": "Tioga_2018", "label": "hasCounty", "title": "hasCounty", "to": "Tioga"}, {"arrows": "to", "color": "blue", "from": "Maverick_2019", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "104"}, {"arrows": "to", "color": "pink", "from": "Dallas_2019", "label": "hasVMT", "title": "hasVMT", "to": "11523452066.0"}, {"arrows": "to", "color": "orange", "from": "Somerset_2018", "label": "hasCounty", "title": "hasCounty", "to": "Somerset"}, {"arrows": "to", "color": "orange", "from": "Somerset_2020", "label": "hasCounty", "title": "hasCounty", "to": "Somerset"}, {"arrows": "to", "color": "pink", "from": "Tioga_2019", "label": "hasVMT", "title": "hasVMT", "to": "75665930.8"}, {"arrows": "to", "color": "orange", "from": "Tioga_2020", "label": "hasCounty", "title": "hasCounty", "to": "Tioga"}, {"arrows": "to", "color": "black", "from": "Tioga", "label": "hasRUCC", "title": "hasRUCC", "to": "8.0"}, {"arrows": "to", "color": "pink", "from": "Maverick_2019", "label": "hasVMT", "title": "hasVMT", "to": "259485519.0"}, {"arrows": "to", "color": "blue", "from": "Somerset_2018", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "90"}, {"arrows": "to", "color": "pink", "from": "Hood_2020", "label": "hasVMT", "title": "hasVMT", "to": "176512942.8"}, {"arrows": "to", "color": "green", "from": "Hood_2020", "label": "hasPopulation", "title": "hasPopulation", "to": "62057"}, {"arrows": "to", "color": "orange", "from": "Maverick_2020", "label": "hasCounty", "title": "hasCounty", "to": "Maverick"}, {"arrows": "to", "color": "green", "from": "Tioga_2020", "label": "hasPopulation", "title": "hasPopulation", "to": "41025"}, {"arrows": "to", "color": "green", "from": "Maverick_2020", "label": "hasPopulation", "title": "hasPopulation", "to": "57875"}, {"arrows": "to", "color": "red", "from": "Hood", "label": "hasState", "title": "hasState", "to": "Texas"}, {"arrows": "to", "color": "green", "from": "Hood_2019", "label": "hasPopulation", "title": "hasPopulation", "to": "61762"}, {"arrows": "to", "color": "blue", "from": "Tioga_2018", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "97"}, {"arrows": "to", "color": "pink", "from": "Maverick_2020", "label": "hasVMT", "title": "hasVMT", "to": "217110757.1"}, {"arrows": "to", "color": "pink", "from": "Hood_2018", "label": "hasVMT", "title": "hasVMT", "to": "181061841.6"}, {"arrows": "to", "color": "orange", "from": "Dallas_2018", "label": "hasCounty", "title": "hasCounty", "to": "Dallas"}, {"arrows": "to", "color": "orange", "from": "Sarpy_2020", "label": "hasCounty", "title": "hasCounty", "to": "Sarpy"}, {"arrows": "to", "color": "pink", "from": "Hood_2019", "label": "hasVMT", "title": "hasVMT", "to": "183377087.7"}, {"arrows": "to", "color": "pink", "from": "Tioga_2020", "label": "hasVMT", "title": "hasVMT", "to": "68625797.88"}, {"arrows": "to", "color": "red", "from": "Sarpy", "label": "hasState", "title": "hasState", "to": "Nebraska"}, {"arrows": "to", "color": "pink", "from": "Somerset_2018", "label": "hasVMT", "title": "hasVMT", "to": "468740329.2"}, {"arrows": "to", "color": "green", "from": "Maverick_2018", "label": "hasPopulation", "title": "hasPopulation", "to": "57970"}, {"arrows": "to", "color": "green", "from": "Dallas_2018", "label": "hasPopulation", "title": "hasPopulation", "to": "2629764"}, {"arrows": "to", "color": "pink", "from": "Somerset_2020", "label": "hasVMT", "title": "hasVMT", "to": "404374594.9"}, {"arrows": "to", "color": "orange", "from": "Maverick_2018", "label": "hasCounty", "title": "hasCounty", "to": "Maverick"}, {"arrows": "to", "color": "pink", "from": "Maverick_2018", "label": "hasVMT", "title": "hasVMT", "to": "255302783.2"}, {"arrows": "to", "color": "orange", "from": "Sarpy_2019", "label": "hasCounty", "title": "hasCounty", "to": "Sarpy"}, {"arrows": "to", "color": "pink", "from": "Somerset_2019", "label": "hasVMT", "title": "hasVMT", "to": "472759734.7"}, {"arrows": "to", "color": "green", "from": "Somerset_2018", "label": "hasPopulation", "title": "hasPopulation", "to": "73951"}, {"arrows": "to", "color": "green", "from": "Tioga_2019", "label": "hasPopulation", "title": "hasPopulation", "to": "40665"}, {"arrows": "to", "color": "pink", "from": "Dallas_2020", "label": "hasVMT", "title": "hasVMT", "to": "10764144411.0"}, {"arrows": "to", "color": "blue", "from": "Maverick_2020", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "160"}, {"arrows": "to", "color": "pink", "from": "Dallas_2018", "label": "hasVMT", "title": "hasVMT", "to": "11826623292.0"}, {"arrows": "to", "color": "blue", "from": "Tioga_2020", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "79"}, {"arrows": "to", "color": "pink", "from": "Sarpy_2019", "label": "hasVMT", "title": "hasVMT", "to": "566793881.8"}, {"arrows": "to", "color": "green", "from": "Sarpy_2020", "label": "hasPopulation", "title": "hasPopulation", "to": "191167"}, {"arrows": "to", "color": "blue", "from": "Hood_2019", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "133"}, {"arrows": "to", "color": "black", "from": "Sarpy", "label": "hasRUCC", "title": "hasRUCC", "to": "2.0"}, {"arrows": "to", "color": "green", "from": "Sarpy_2018", "label": "hasPopulation", "title": "hasPopulation", "to": "184106"}, {"arrows": "to", "color": "black", "from": "Somerset", "label": "hasRUCC", "title": "hasRUCC", "to": "6.0"}, {"arrows": "to", "color": "blue", "from": "Hood_2018", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "133"}, {"arrows": "to", "color": "orange", "from": "Hood_2019", "label": "hasCounty", "title": "hasCounty", "to": "Hood"}, {"arrows": "to", "color": "red", "from": "Tioga", "label": "hasState", "title": "hasState", "to": "Pennsylvania"}, {"arrows": "to", "color": "orange", "from": "Maverick_2019", "label": "hasCounty", "title": "hasCounty", "to": "Maverick"}, {"arrows": "to", "color": "green", "from": "Tioga_2018", "label": "hasPopulation", "title": "hasPopulation", "to": "40725"}, {"arrows": "to", "color": "pink", "from": "Tioga_2018", "label": "hasVMT", "title": "hasVMT", "to": "69919035.0"}, {"arrows": "to", "color": "green", "from": "Somerset_2020", "label": "hasPopulation", "title": "hasPopulation", "to": "74019"}, {"arrows": "to", "color": "orange", "from": "Sarpy_2018", "label": "hasCounty", "title": "hasCounty", "to": "Sarpy"}, {"arrows": "to", "color": "blue", "from": "Sarpy_2018", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "93"}, {"arrows": "to", "color": "blue", "from": "Tioga_2019", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "74"}, {"arrows": "to", "color": "green", "from": "Sarpy_2019", "label": "hasPopulation", "title": "hasPopulation", "to": "186893"}, {"arrows": "to", "color": "black", "from": "Maverick", "label": "hasRUCC", "title": "hasRUCC", "to": "3.0"}, {"arrows": "to", "color": "blue", "from": "Dallas_2019", "label": "hasMaxAQI", "title": "hasMaxAQI", "to": "143"}, {"arrows": "to", "color": "orange", "from": "Hood_2020", "label": "hasCounty", "title": "hasCounty", "to": "Hood"}, {"arrows": "to", "color": "black", "from": "Hood", "label": "hasRUCC", "title": "hasRUCC", "to": "4.0"}, {"arrows": "to", "color": "green", "from": "Maverick_2019", "label": "hasPopulation", "title": "hasPopulation", "to": "58357"}, {"arrows": "to", "color": "green", "from": "Somerset_2019", "label": "hasPopulation", "title": "hasPopulation", "to": "73442"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+                    network.on("click", neighbourhoodHighlight);
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
