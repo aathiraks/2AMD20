@@ -1,0 +1,42 @@
+State Code,County Code,FIPS,State Name,County Name,RUCC,State Name Code,County Full Name
+06,037,06037,California,Los Angeles,1.0,CA,Los Angeles County
+06,029,06029,California,Kern,2.0,CA,Kern County
+06,025,06025,California,Imperial,3.0,CA,Imperial County
+06,033,06033,California,Lake,4.0,CA,Lake County
+06,023,06023,California,Humboldt,5.0,CA,Humboldt County
+06,021,06021,California,Glenn,6.0,CA,Glenn County
+06,093,06093,California,Siskiyou,7.0,CA,Siskiyou County
+06,105,06105,California,Trinity,8.0,CA,Trinity County
+06,063,06063,California,Plumas,9.0,CA,Plumas County
+36,081,36081,New York,Queens *,1.0,NY,Queens County
+36,027,36027,New York,Dutchess,2.0,NY,Dutchess County
+36,045,36045,New York,Jefferson,3.0,NY,Jefferson County
+36,019,36019,New York,Clinton,4.0,NY,Clinton County
+36,031,36031,New York,Essex,6.0,NY,Essex County
+36,033,36033,New York,Franklin,7.0,NY,Franklin County
+36,041,36041,New York,Hamilton,8.0,NY,Hamilton County
+31,153,31153,Nebraska,Sarpy,2.0,NE,Sarpy County
+31,043,31043,Nebraska,Dakota,3.0,NE,Dakota County
+31,001,31001,Nebraska,Adams,4.0,NE,Adams County
+31,111,31111,Nebraska,Lincoln,5.0,NE,Lincoln County
+31,185,31185,Nebraska,York,6.0,NE,York County
+31,145,31145,Nebraska,Red Willow,7.0,NE,Red Willow County
+31,023,31023,Nebraska,Butler,8.0,NE,Butler County
+31,087,31087,Nebraska,Hitchcock,9.0,NE,Hitchcock County
+42,005,42005,Pennsylvania,Armstrong,1.0,PA,Armstrong County
+42,025,42025,Pennsylvania,Carbon,2.0,PA,Carbon County
+42,013,42013,Pennsylvania,Blair,3.0,PA,Blair County
+42,063,42063,Pennsylvania,Indiana,4.0,PA,Indiana County
+42,111,42111,Pennsylvania,Somerset,6.0,PA,Somerset County
+42,109,42109,Pennsylvania,Snyder,7.0,PA,Snyder County
+42,117,42117,Pennsylvania,Tioga,8.0,PA,Tioga County
+42,105,42105,Pennsylvania,Potter,9.0,PA,Potter County
+48,113,48113,Texas,Dallas,1.0,TX,Dallas County
+48,107,48107,Texas,Crosby,2.0,TX,Crosby County
+48,323,48323,Texas,Maverick,3.0,TX,Maverick County
+48,221,48221,Texas,Hood,4.0,TX,Hood County
+48,049,48049,Texas,Brown,5.0,TX,Brown County
+48,445,48445,Texas,Terry,6.0,TX,Terry County
+48,419,48419,Texas,Shelby,7.0,TX,Shelby County
+48,081,48081,Texas,Coke,8.0,TX,Coke County
+48,101,48101,Texas,Cottle,9.0,TX,Cottle County

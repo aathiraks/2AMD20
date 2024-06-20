@@ -1,0 +1,53 @@
+State,Counties 1,Counties 2
+CA,Los Angeles,Alameda
+CA,Kern,Butte
+CA,Imperial,Contra Costa
+CA,Lake,Humboldt
+CA,Humboldt,Imperial
+CA,Glenn,Fresno
+CA,Siskiyou,Kern
+CA,Trinity,Los Angeles
+CA,Plumas,Madera
+,,Marin
+,,Monterey
+,,Napa
+,,Orange
+,,Riverside
+,,Sacramento
+,,San Berdanrdino
+,,San Diego
+,,San Francisco
+,,San Joaquin
+,,San Mateo
+,,Santa Barbara
+,,Santa Clara
+,,Solano
+,,Sonoma
+,,Stanislaus
+NY,Queens,Bronx
+NY,Dutchness,Erie
+NY,Jefferson,Monroe
+NY,Clinton,Queens
+NY,,
+NY,Essex,
+NY,Franklin,
+NY,Hamilton,
+NY,,
+PA,Armstrong,Adams
+PA,Carbon,Allegheny
+PA,Blair,Cambria
+PA,Indiana,Lackawanna
+PA,,Philadelphia
+PA,Somerset,York
+PA,Snyder,
+PA,Tioga,
+PA,Potter,
+TX,Dallas,Bexar
+TX,Crosby,Dallas
+TX,Maverick,El Paso
+TX,Hood,Harris
+TX,Brown,Jefferson
+TX,Terry,Tarrant
+TX,Shelby,Travis
+TX,Coke,
+TX,Cottle,

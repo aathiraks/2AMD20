@@ -1,0 +1,247 @@
+State Code,County Code,FIPS,State Name,County Name,RUCC,State Name Code,County Full Name,Year,Population
+06,021,06021,California,Glenn,6.0,CA,Glenn County,2018,27899
+06,023,06023,California,Humboldt,5.0,CA,Humboldt County,2018,136502
+06,025,06025,California,Imperial,3.0,CA,Imperial County,2018,181062
+06,029,06029,California,Kern,2.0,CA,Kern County,2018,893618
+06,033,06033,California,Lake,4.0,CA,Lake County,2018,64394
+06,037,06037,California,Los Angeles,1.0,CA,Los Angeles County,2018,10061533
+06,063,06063,California,Plumas,9.0,CA,Plumas County,2018,18830
+06,093,06093,California,Siskiyou,7.0,CA,Siskiyou County,2018,43624
+06,105,06105,California,Trinity,8.0,CA,Trinity County,2018,12598
+31,001,31001,Nebraska,Adams,4.0,NE,Adams County,2018,31513
+31,023,31023,Nebraska,Butler,8.0,NE,Butler County,2018,8022
+31,043,31043,Nebraska,Dakota,3.0,NE,Dakota County,2018,20081
+31,087,31087,Nebraska,Hitchcock,9.0,NE,Hitchcock County,2018,2786
+31,111,31111,Nebraska,Lincoln,5.0,NE,Lincoln County,2018,35182
+31,145,31145,Nebraska,Red Willow,7.0,NE,Red Willow County,2018,10732
+31,153,31153,Nebraska,Sarpy,2.0,NE,Sarpy County,2018,184106
+31,185,31185,Nebraska,York,6.0,NE,York County,2018,13726
+36,019,36019,New York,Clinton,4.0,NY,Clinton County,2018,80675
+36,027,36027,New York,Dutchess,2.0,NY,Dutchess County,2018,293814
+36,031,36031,New York,Essex,6.0,NY,Essex County,2018,37309
+36,033,36033,New York,Franklin,7.0,NY,Franklin County,2018,50325
+36,041,36041,New York,Hamilton,8.0,NY,Hamilton County,2018,4453
+36,045,36045,New York,Jefferson,3.0,NY,Jefferson County,2018,112266
+36,081,36081,New York,Queens *,1.0,NY,Queens County,2018,2275286
+42,005,42005,Pennsylvania,Armstrong,1.0,PA,Armstrong County,2018,65411
+42,013,42013,Pennsylvania,Blair,3.0,PA,Blair County,2018,122567
+42,025,42025,Pennsylvania,Carbon,2.0,PA,Carbon County,2018,64169
+42,063,42063,Pennsylvania,Indiana,4.0,PA,Indiana County,2018,84578
+42,105,42105,Pennsylvania,Potter,9.0,PA,Potter County,2018,16626
+42,109,42109,Pennsylvania,Snyder,7.0,PA,Snyder County,2018,40474
+42,111,42111,Pennsylvania,Somerset,6.0,PA,Somerset County,2018,73951
+42,117,42117,Pennsylvania,Tioga,8.0,PA,Tioga County,2018,40725
+48,049,48049,Texas,Brown,5.0,TX,Brown County,2018,37750
+48,081,48081,Texas,Coke,8.0,TX,Coke County,2018,3317
+48,101,48101,Texas,Cottle,9.0,TX,Cottle County,2018,1375
+48,107,48107,Texas,Crosby,2.0,TX,Crosby County,2018,5743
+48,113,48113,Texas,Dallas,1.0,TX,Dallas County,2018,2629764
+48,221,48221,Texas,Hood,4.0,TX,Hood County,2018,60249
+48,323,48323,Texas,Maverick,3.0,TX,Maverick County,2018,57970
+48,419,48419,Texas,Shelby,7.0,TX,Shelby County,2018,25300
+48,445,48445,Texas,Terry,6.0,TX,Terry County,2018,12311
+06,021,06021,California,Glenn,6.0,CA,Glenn County,2019,28445
+06,023,06023,California,Humboldt,5.0,CA,Humboldt County,2019,135839
+06,025,06025,California,Imperial,3.0,CA,Imperial County,2019,180439
+06,029,06029,California,Kern,2.0,CA,Kern County,2019,898898
+06,033,06033,California,Lake,4.0,CA,Lake County,2019,64463
+06,037,06037,California,Los Angeles,1.0,CA,Los Angeles County,2019,10011602
+06,063,06063,California,Plumas,9.0,CA,Plumas County,2019,19052
+06,093,06093,California,Siskiyou,7.0,CA,Siskiyou County,2019,43663
+06,105,06105,California,Trinity,8.0,CA,Trinity County,2019,12337
+31,001,31001,Nebraska,Adams,4.0,NE,Adams County,2019,31309
+31,023,31023,Nebraska,Butler,8.0,NE,Butler County,2019,7990
+31,043,31043,Nebraska,Dakota,3.0,NE,Dakota County,2019,20100
+31,087,31087,Nebraska,Hitchcock,9.0,NE,Hitchcock County,2019,2759
+31,111,31111,Nebraska,Lincoln,5.0,NE,Lincoln County,2019,34856
+31,145,31145,Nebraska,Red Willow,7.0,NE,Red Willow County,2019,10720
+31,153,31153,Nebraska,Sarpy,2.0,NE,Sarpy County,2019,186893
+31,185,31185,Nebraska,York,6.0,NE,York County,2019,13612
+36,019,36019,New York,Clinton,4.0,NY,Clinton County,2019,80031
+36,027,36027,New York,Dutchess,2.0,NY,Dutchess County,2019,293934
+36,031,36031,New York,Essex,6.0,NY,Essex County,2019,36987
+36,033,36033,New York,Franklin,7.0,NY,Franklin County,2019,50102
+36,041,36041,New York,Hamilton,8.0,NY,Hamilton County,2019,4438
+36,045,36045,New York,Jefferson,3.0,NY,Jefferson County,2019,110143
+36,081,36081,New York,Queens *,1.0,NY,Queens County,2019,2253942
+42,005,42005,Pennsylvania,Armstrong,1.0,PA,Armstrong County,2019,64699
+42,013,42013,Pennsylvania,Blair,3.0,PA,Blair County,2019,121942
+42,025,42025,Pennsylvania,Carbon,2.0,PA,Carbon County,2019,64125
+42,063,42063,Pennsylvania,Indiana,4.0,PA,Indiana County,2019,84022
+42,105,42105,Pennsylvania,Potter,9.0,PA,Potter County,2019,16545
+42,109,42109,Pennsylvania,Snyder,7.0,PA,Snyder County,2019,40393
+42,111,42111,Pennsylvania,Somerset,6.0,PA,Somerset County,2019,73442
+42,117,42117,Pennsylvania,Tioga,8.0,PA,Tioga County,2019,40665
+48,049,48049,Texas,Brown,5.0,TX,Brown County,2019,37770
+48,081,48081,Texas,Coke,8.0,TX,Coke County,2019,3316
+48,101,48101,Texas,Cottle,9.0,TX,Cottle County,2019,1385
+48,107,48107,Texas,Crosby,2.0,TX,Crosby County,2019,5701
+48,113,48113,Texas,Dallas,1.0,TX,Dallas County,2019,2635603
+48,221,48221,Texas,Hood,4.0,TX,Hood County,2019,61762
+48,323,48323,Texas,Maverick,3.0,TX,Maverick County,2019,58357
+48,419,48419,Texas,Shelby,7.0,TX,Shelby County,2019,25297
+48,445,48445,Texas,Terry,6.0,TX,Terry County,2019,12354
+06,021,06021,California,Glenn,6.0,CA,Glenn County,2020,28904
+06,023,06023,California,Humboldt,5.0,CA,Humboldt County,2020,136262
+06,025,06025,California,Imperial,3.0,CA,Imperial County,2020,179612
+06,029,06029,California,Kern,2.0,CA,Kern County,2020,905910
+06,033,06033,California,Lake,4.0,CA,Lake County,2020,68199
+06,037,06037,California,Los Angeles,1.0,CA,Los Angeles County,2020,9992813
+06,063,06063,California,Plumas,9.0,CA,Plumas County,2020,19746
+06,093,06093,California,Siskiyou,7.0,CA,Siskiyou County,2020,43995
+06,105,06105,California,Trinity,8.0,CA,Trinity County,2020,16091
+31,001,31001,Nebraska,Adams,4.0,NE,Adams County,2020,31178
+31,023,31023,Nebraska,Butler,8.0,NE,Butler County,2020,8360
+31,043,31043,Nebraska,Dakota,3.0,NE,Dakota County,2020,21554
+31,087,31087,Nebraska,Hitchcock,9.0,NE,Hitchcock County,2020,2618
+31,111,31111,Nebraska,Lincoln,5.0,NE,Lincoln County,2020,34532
+31,145,31145,Nebraska,Red Willow,7.0,NE,Red Willow County,2020,10682
+31,153,31153,Nebraska,Sarpy,2.0,NE,Sarpy County,2020,191167
+31,185,31185,Nebraska,York,6.0,NE,York County,2020,14102
+36,019,36019,New York,Clinton,4.0,NY,Clinton County,2020,79699
+36,027,36027,New York,Dutchess,2.0,NY,Dutchess County,2020,295901
+36,031,36031,New York,Essex,6.0,NY,Essex County,2020,37275
+36,033,36033,New York,Franklin,7.0,NY,Franklin County,2020,47477
+36,041,36041,New York,Hamilton,8.0,NY,Hamilton County,2020,5079
+36,045,36045,New York,Jefferson,3.0,NY,Jefferson County,2020,116069
+36,081,36081,New York,Queens *,1.0,NY,Queens County,2020,2388864
+42,005,42005,Pennsylvania,Armstrong,1.0,PA,Armstrong County,2020,65470
+42,013,42013,Pennsylvania,Blair,3.0,PA,Blair County,2020,122666
+42,025,42025,Pennsylvania,Carbon,2.0,PA,Carbon County,2020,64752
+42,063,42063,Pennsylvania,Indiana,4.0,PA,Indiana County,2020,83151
+42,105,42105,Pennsylvania,Potter,9.0,PA,Potter County,2020,16383
+42,109,42109,Pennsylvania,Snyder,7.0,PA,Snyder County,2020,39733
+42,111,42111,Pennsylvania,Somerset,6.0,PA,Somerset County,2020,74019
+42,117,42117,Pennsylvania,Tioga,8.0,PA,Tioga County,2020,41025
+48,049,48049,Texas,Brown,5.0,TX,Brown County,2020,38043
+48,081,48081,Texas,Coke,8.0,TX,Coke County,2020,3300
+48,101,48101,Texas,Cottle,9.0,TX,Cottle County,2020,1365
+48,107,48107,Texas,Crosby,2.0,TX,Crosby County,2020,5098
+48,113,48113,Texas,Dallas,1.0,TX,Dallas County,2020,2610112
+48,221,48221,Texas,Hood,4.0,TX,Hood County,2020,62057
+48,323,48323,Texas,Maverick,3.0,TX,Maverick County,2020,57875
+48,419,48419,Texas,Shelby,7.0,TX,Shelby County,2020,23924
+48,445,48445,Texas,Terry,6.0,TX,Terry County,2020,11793
+06,021,06021,California,Glenn,6.0,CA,Glenn County,2021,28718
+06,023,06023,California,Humboldt,5.0,CA,Humboldt County,2021,134897
+06,025,06025,California,Imperial,3.0,CA,Imperial County,2021,179138
+06,029,06029,California,Kern,2.0,CA,Kern County,2021,912709
+06,033,06033,California,Lake,4.0,CA,Lake County,2021,68645
+06,037,06037,California,Los Angeles,1.0,CA,Los Angeles County,2021,9809462
+06,063,06063,California,Plumas,9.0,CA,Plumas County,2021,19958
+06,093,06093,California,Siskiyou,7.0,CA,Siskiyou County,2021,44139
+06,105,06105,California,Trinity,8.0,CA,Trinity County,2021,16082
+31,001,31001,Nebraska,Adams,4.0,NE,Adams County,2021,30967
+31,023,31023,Nebraska,Butler,8.0,NE,Butler County,2021,8454
+31,043,31043,Nebraska,Dakota,3.0,NE,Dakota County,2021,21282
+31,087,31087,Nebraska,Hitchcock,9.0,NE,Hitchcock County,2021,2599
+31,111,31111,Nebraska,Lincoln,5.0,NE,Lincoln County,2021,34074
+31,145,31145,Nebraska,Red Willow,7.0,NE,Red Willow County,2021,10620
+31,153,31153,Nebraska,Sarpy,2.0,NE,Sarpy County,2021,193826
+31,185,31185,Nebraska,York,6.0,NE,York County,2021,14239
+36,019,36019,New York,Clinton,4.0,NY,Clinton County,2021,78993
+36,027,36027,New York,Dutchess,2.0,NY,Dutchess County,2021,298776
+36,031,36031,New York,Essex,6.0,NY,Essex County,2021,37233
+36,033,36033,New York,Franklin,7.0,NY,Franklin County,2021,47106
+36,041,36041,New York,Hamilton,8.0,NY,Hamilton County,2021,5122
+36,045,36045,New York,Jefferson,3.0,NY,Jefferson County,2021,116902
+36,081,36081,New York,Queens *,1.0,NY,Queens County,2021,2329008
+42,005,42005,Pennsylvania,Armstrong,1.0,PA,Armstrong County,2021,65212
+42,013,42013,Pennsylvania,Blair,3.0,PA,Blair County,2021,122150
+42,025,42025,Pennsylvania,Carbon,2.0,PA,Carbon County,2021,65522
+42,063,42063,Pennsylvania,Indiana,4.0,PA,Indiana County,2021,83201
+42,105,42105,Pennsylvania,Potter,9.0,PA,Potter County,2021,16311
+42,109,42109,Pennsylvania,Snyder,7.0,PA,Snyder County,2021,39734
+42,111,42111,Pennsylvania,Somerset,6.0,PA,Somerset County,2021,72989
+42,117,42117,Pennsylvania,Tioga,8.0,PA,Tioga County,2021,41308
+48,049,48049,Texas,Brown,5.0,TX,Brown County,2021,38135
+48,081,48081,Texas,Coke,8.0,TX,Coke County,2021,3304
+48,101,48101,Texas,Cottle,9.0,TX,Cottle County,2021,1355
+48,107,48107,Texas,Crosby,2.0,TX,Crosby County,2021,5085
+48,113,48113,Texas,Dallas,1.0,TX,Dallas County,2021,2588235
+48,221,48221,Texas,Hood,4.0,TX,Hood County,2021,64293
+48,323,48323,Texas,Maverick,3.0,TX,Maverick County,2021,57683
+48,419,48419,Texas,Shelby,7.0,TX,Shelby County,2021,23984
+48,445,48445,Texas,Terry,6.0,TX,Terry County,2021,11714
+06,021,06021,California,Glenn,6.0,CA,Glenn County,2022,28360
+06,023,06023,California,Humboldt,5.0,CA,Humboldt County,2022,134944
+06,025,06025,California,Imperial,3.0,CA,Imperial County,2022,178940
+06,029,06029,California,Kern,2.0,CA,Kern County,2022,916751
+06,033,06033,California,Lake,4.0,CA,Lake County,2022,68172
+06,037,06037,California,Los Angeles,1.0,CA,Los Angeles County,2022,9719765
+06,063,06063,California,Plumas,9.0,CA,Plumas County,2022,19443
+06,093,06093,California,Siskiyou,7.0,CA,Siskiyou County,2022,43786
+06,105,06105,California,Trinity,8.0,CA,Trinity County,2022,15778
+31,001,31001,Nebraska,Adams,4.0,NE,Adams County,2022,30947
+31,023,31023,Nebraska,Butler,8.0,NE,Butler County,2022,8443
+31,043,31043,Nebraska,Dakota,3.0,NE,Dakota County,2022,21116
+31,087,31087,Nebraska,Hitchcock,9.0,NE,Hitchcock County,2022,2614
+31,111,31111,Nebraska,Lincoln,5.0,NE,Lincoln County,2022,33614
+31,145,31145,Nebraska,Red Willow,7.0,NE,Red Willow County,2022,10528
+31,153,31153,Nebraska,Sarpy,2.0,NE,Sarpy County,2022,196427
+31,185,31185,Nebraska,York,6.0,NE,York County,2022,14312
+36,019,36019,New York,Clinton,4.0,NY,Clinton County,2022,78037
+36,027,36027,New York,Dutchess,2.0,NY,Dutchess County,2022,297609
+36,031,36031,New York,Essex,6.0,NY,Essex County,2022,36763
+36,033,36033,New York,Franklin,7.0,NY,Franklin County,2022,46393
+36,041,36041,New York,Hamilton,8.0,NY,Hamilton County,2022,5121
+36,045,36045,New York,Jefferson,3.0,NY,Jefferson County,2022,115461
+36,081,36081,New York,Queens *,1.0,NY,Queens County,2022,2278558
+42,005,42005,Pennsylvania,Armstrong,1.0,PA,Armstrong County,2022,64704
+42,013,42013,Pennsylvania,Blair,3.0,PA,Blair County,2022,120734
+42,025,42025,Pennsylvania,Carbon,2.0,PA,Carbon County,2022,65493
+42,063,42063,Pennsylvania,Indiana,4.0,PA,Indiana County,2022,83064
+42,105,42105,Pennsylvania,Potter,9.0,PA,Potter County,2022,16206
+42,109,42109,Pennsylvania,Snyder,7.0,PA,Snyder County,2022,39506
+42,111,42111,Pennsylvania,Somerset,6.0,PA,Somerset County,2022,72629
+42,117,42117,Pennsylvania,Tioga,8.0,PA,Tioga County,2022,40967
+48,049,48049,Texas,Brown,5.0,TX,Brown County,2022,38443
+48,081,48081,Texas,Coke,8.0,TX,Coke County,2022,3322
+48,101,48101,Texas,Cottle,9.0,TX,Cottle County,2022,1317
+48,107,48107,Texas,Crosby,2.0,TX,Crosby County,2022,4992
+48,113,48113,Texas,Dallas,1.0,TX,Dallas County,2022,2601993
+48,221,48221,Texas,Hood,4.0,TX,Hood County,2022,66394
+48,323,48323,Texas,Maverick,3.0,TX,Maverick County,2022,57628
+48,419,48419,Texas,Shelby,7.0,TX,Shelby County,2022,24061
+48,445,48445,Texas,Terry,6.0,TX,Terry County,2022,11444
+06,021,06021,California,Glenn,6.0,CA,Glenn County,2023,28129
+06,023,06023,California,Humboldt,5.0,CA,Humboldt County,2023,133985
+06,025,06025,California,Imperial,3.0,CA,Imperial County,2023,179057
+06,029,06029,California,Kern,2.0,CA,Kern County,2023,913820
+06,033,06033,California,Lake,4.0,CA,Lake County,2023,67878
+06,037,06037,California,Los Angeles,1.0,CA,Los Angeles County,2023,9663345
+06,063,06063,California,Plumas,9.0,CA,Plumas County,2023,19131
+06,093,06093,California,Siskiyou,7.0,CA,Siskiyou County,2023,42905
+06,105,06105,California,Trinity,8.0,CA,Trinity County,2023,15670
+31,001,31001,Nebraska,Adams,4.0,NE,Adams County,2023,30899
+31,023,31023,Nebraska,Butler,8.0,NE,Butler County,2023,8459
+31,043,31043,Nebraska,Dakota,3.0,NE,Dakota County,2023,21268
+31,087,31087,Nebraska,Hitchcock,9.0,NE,Hitchcock County,2023,2552
+31,111,31111,Nebraska,Lincoln,5.0,NE,Lincoln County,2023,33365
+31,145,31145,Nebraska,Red Willow,7.0,NE,Red Willow County,2023,10457
+31,153,31153,Nebraska,Sarpy,2.0,NE,Sarpy County,2023,199886
+31,185,31185,Nebraska,York,6.0,NE,York County,2023,14356
+36,019,36019,New York,Clinton,4.0,NY,Clinton County,2023,78115
+36,027,36027,New York,Dutchess,2.0,NY,Dutchess County,2023,297150
+36,031,36031,New York,Essex,6.0,NY,Essex County,2023,36775
+36,033,36033,New York,Franklin,7.0,NY,Franklin County,2023,46502
+36,041,36041,New York,Hamilton,8.0,NY,Hamilton County,2023,5082
+36,045,36045,New York,Jefferson,3.0,NY,Jefferson County,2023,114787
+36,081,36081,New York,Queens *,1.0,NY,Queens County,2023,2252196
+42,005,42005,Pennsylvania,Armstrong,1.0,PA,Armstrong County,2023,64074
+42,013,42013,Pennsylvania,Blair,3.0,PA,Blair County,2023,120273
+42,025,42025,Pennsylvania,Carbon,2.0,PA,Carbon County,2023,65458
+42,063,42063,Pennsylvania,Indiana,4.0,PA,Indiana County,2023,83094
+42,105,42105,Pennsylvania,Potter,9.0,PA,Potter County,2023,15999
+42,109,42109,Pennsylvania,Snyder,7.0,PA,Snyder County,2023,39717
+42,111,42111,Pennsylvania,Somerset,6.0,PA,Somerset County,2023,72197
+42,117,42117,Pennsylvania,Tioga,8.0,PA,Tioga County,2023,40840
+48,049,48049,Texas,Brown,5.0,TX,Brown County,2023,38709
+48,081,48081,Texas,Coke,8.0,TX,Coke County,2023,3352
+48,101,48101,Texas,Cottle,9.0,TX,Cottle County,2023,1294
+48,107,48107,Texas,Crosby,2.0,TX,Crosby County,2023,4917
+48,113,48113,Texas,Dallas,1.0,TX,Dallas County,2023,2606358
+48,221,48221,Texas,Hood,4.0,TX,Hood County,2023,67774
+48,323,48323,Texas,Maverick,3.0,TX,Maverick County,2023,57762
+48,419,48419,Texas,Shelby,7.0,TX,Shelby County,2023,24179
+48,445,48445,Texas,Terry,6.0,TX,Terry County,2023,11547

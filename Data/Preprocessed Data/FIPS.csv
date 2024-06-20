@@ -1,0 +1,42 @@
+State,County,RUCC,FIPS,State Code,County Code
+CA,Los Angeles County,1.0,06037,06,037
+CA,Kern County,2.0,06029,06,029
+CA,Imperial County,3.0,06025,06,025
+CA,Lake County,4.0,06033,06,033
+CA,Humboldt County,5.0,06023,06,023
+CA,Glenn County,6.0,06021,06,021
+CA,Siskiyou County,7.0,06093,06,093
+CA,Trinity County,8.0,06105,06,105
+CA,Plumas County,9.0,06063,06,063
+NY,Queens County,1.0,36081,36,081
+NY,Dutchess County,2.0,36027,36,027
+NY,Jefferson County,3.0,36045,36,045
+NY,Clinton County,4.0,36019,36,019
+NY,Essex County,6.0,36031,36,031
+NY,Franklin County,7.0,36033,36,033
+NY,Hamilton County,8.0,36041,36,041
+NE,Sarpy County,2.0,31153,31,153
+NE,Dakota County,3.0,31043,31,043
+NE,Adams County,4.0,31001,31,001
+NE,Lincoln County,5.0,31111,31,111
+NE,York County,6.0,31185,31,185
+NE,Red Willow County,7.0,31145,31,145
+NE,Butler County,8.0,31023,31,023
+NE,Hitchcock County,9.0,31087,31,087
+PA,Armstrong County,1.0,42005,42,005
+PA,Carbon County,2.0,42025,42,025
+PA,Blair County,3.0,42013,42,013
+PA,Indiana County,4.0,42063,42,063
+PA,Somerset County,6.0,42111,42,111
+PA,Snyder County,7.0,42109,42,109
+PA,Tioga County,8.0,42117,42,117
+PA,Potter County,9.0,42105,42,105
+TX,Dallas County,1.0,48113,48,113
+TX,Crosby County,2.0,48107,48,107
+TX,Maverick County,3.0,48323,48,323
+TX,Hood County,4.0,48221,48,221
+TX,Brown County,5.0,48049,48,049
+TX,Terry County,6.0,48445,48,445
+TX,Shelby County,7.0,48419,48,419
+TX,Coke County,8.0,48081,48,081
+TX,Cottle County,9.0,48101,48,101
